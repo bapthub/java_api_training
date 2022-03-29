@@ -1,4 +1,4 @@
-package src.main.java.fr.lernejo.navy_battle;
+package fr.lernejo.navy_battle;
 
 import java.util.HashMap;
 import java.util.Map;
