@@ -1,8 +1,9 @@
 package fr.lernejo.navy_battle;
 
+import fr.lernejo.server.Server;
+
 import java.util.HashMap;
 import java.util.Map;
-import src.main.java.fr.lernejo.server.Server;
 import java.util.UUID;
 import java.io.IOException;
 

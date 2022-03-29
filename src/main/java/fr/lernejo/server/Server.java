@@ -1,4 +1,4 @@
-package src.main.java.fr.lernejo.server;
+package fr.lernejo.server;
 
 import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
@@ -15,7 +15,7 @@ public class Server {
     }
 
     public void setup_server() throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(this.port), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.setExecutor(Executors.newFixedThreadPool(1));
         server.createContext("/ping", new Ping_Handler());
         server.start();

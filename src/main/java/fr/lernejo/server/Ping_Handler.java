@@ -1,4 +1,4 @@
-package src.main.java.fr.lernejo.server;
+package fr.lernejo.server;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
