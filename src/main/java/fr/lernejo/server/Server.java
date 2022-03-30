@@ -4,14 +4,11 @@ import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
-import java.util.Map;
 
 public class Server {
     private final int port;
-    //private final Map<String, String> serv_inf;
-    public Server(int port){//, Map<String,String> serv_inf){
+    public Server(int port){
         this.port = port;
-        //this.serv_inf = serv_inf;
     }
 
     public void setup_server() throws IOException {
