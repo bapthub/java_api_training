@@ -13,10 +13,10 @@ public class Launcher {
             System.out.println("Enter a port for the server");
             return;
         }
-        final Map<String, String> serv_inf = new HashMap<String,String>();
-        serv_inf.put("id", UUID.randomUUID().toString());
-        serv_inf.put("port", String.valueOf(Integer.parseInt(args[0])));
-        Server serv  = new Server(Integer.parseInt(args[0]),serv_inf);
+        /*final Map<String, String> serv_inf = new HashMap<String,String>();
+        serv_inf.put("id", UUID.randomUUID().toString());*/
+        //serv_inf.put("port", String.valueOf(Integer.parseInt(args[0])));
+        Server serv  = new Server(Integer.parseInt(args[0]));//,serv_inf);
         serv.setup_server();
     }
 }

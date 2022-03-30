@@ -8,10 +8,10 @@ import java.util.Map;
 
 public class Server {
     private final int port;
-    private final Map<String, String> serv_inf;
-    public Server(int port, Map<String,String> serv_inf){
+    //private final Map<String, String> serv_inf;
+    public Server(int port){//, Map<String,String> serv_inf){
         this.port = port;
-        this.serv_inf = serv_inf;
+        //this.serv_inf = serv_inf;
     }
 
     public void setup_server() throws IOException {
