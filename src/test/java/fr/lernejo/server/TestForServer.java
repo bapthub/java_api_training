@@ -31,10 +31,5 @@ class TestForServer {
         Assertions.assertEquals("OK", httpResponse.body());
 
     }
-    @Test
-    public void test_setup_server() throws Exception {
-        Server server = new Server(9999);
-        server.setup_server();
-    }
 }
 
