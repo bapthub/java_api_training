@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TestForServer {
 
     @Test
-    public void testForPing_1() throws IOException, InterruptedException {
+    public void test_For_Ping_1() throws IOException, InterruptedException {
         Server server = new Server(9877);
         server.setup_server();
         HttpClient httpClient = HttpClient.newHttpClient();
@@ -29,6 +29,12 @@ class TestForServer {
         HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
         Assertions.assertEquals(HttpURLConnection.HTTP_OK, httpResponse.statusCode());
         Assertions.assertEquals("OK", httpResponse.body());
+
+    }
+    @Test
+    public void test_setup_server() throws Exception {
+        Server server = new Server(9999);
+        server.setup_server();
     }
 }
 
